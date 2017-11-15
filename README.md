@@ -3,8 +3,7 @@
 
 # Como usar apenas o token
 
-<b>use App\Helpers\Csrf;</b>
-
+    use App\Helpers\Csrf;
     public function index() {
 
         $Csrf = new Csrf();
