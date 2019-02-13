@@ -24,7 +24,7 @@
 # Na view apenas faremos a chamada ao índice('csrf') do array data
 
         <form method="post">
-            ```php echo $csrf; ```
+            <?php echo $csrf; ?>
             <input type="text" name="nome"/>
             <input type="text" name="sexo" />
             <input type="submit" value="Login"/>
