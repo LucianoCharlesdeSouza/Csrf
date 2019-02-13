@@ -3,6 +3,7 @@
 
 # Como usar apenas o token
 
+```php
     use App\Helpers\Csrf;
     public function index() {
 
@@ -18,6 +19,7 @@
 
         $this->loadTemplate('home', $this->getData());
     }
+```
 
 # Na view apenas faremos a chamada ao índice('csrf') do array data
 
@@ -30,6 +32,7 @@
         
 # Como usar o token e junto escondermos os names dos inputs com hash
 
+```php
     use App\Helpers\Csrf;
     public function index() {
 
@@ -54,7 +57,8 @@
 
         $this->loadTemplate('home', $this->getData());
     }
-    
+```
+
  # Como ficaria nossa view, pois agora teremos de passar alem do índice('Csrf') do array data, tambem os índices do array('fields_name') nos names dos inputs
          <form method="post">
             <?php echo $csrf; ?>
